@@ -9,7 +9,7 @@ bool myBool = "yes".Convert<bool>();
 
 float myFloat = "0.005".Convert<float>();
 
-Enum myEnum = "2".Convert<MyEnum>();
+MyEnum myEnum = "2".Convert<MyEnum>();
 
 ```
 
