@@ -75,6 +75,11 @@ namespace Loxifi
 				return s;
 			}
 
+			if(Nullable.GetUnderlyingType(t) != null && string.IsNullOrWhiteSpace(s))
+			{
+				return null;
+			}
+
 			foreach (MethodInfo mi in t.GetMethods())
 			{
 				//Must be an explicit or implicit converter
